@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS hrdata.departments
+CREATE TABLE IF NOT EXISTS GOOGLE_TEST.hrdata.departments
    ( dept_id NUMBER(4)
    , department_name VARCHAR(30) NOT NULL
    , manager_id NUMBER(6)
@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS hrdata.departments
 -- Insert data into tables
 
 
-INSERT INTO hrdata.departments VALUES 
+INSERT INTO GOOGLE_TEST.hrdata.departments VALUES 
    ( 10, 'Administration', 200, 1700), 
    ( 20, 'Marketing', 201, 1800),
    ( 30, 'Purchasing', 114, 1700),
