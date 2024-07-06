@@ -1,6 +1,6 @@
 
 -- Create Tables
-CREATE TABLE IF NOT EXISTS hrdata.employees
+CREATE TABLE IF NOT EXISTS GOOGLE_DEV.hrdata.employees
    ( employee_id NUMBER(6)
    , first_name VARCHAR(20)
    , last_name VARCHAR(25) NOT NULL
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS hrdata.employees
    , PRIMARY KEY (employee_id)
    ) ; 
 
-INSERT INTO hrdata.employees VALUES 
+INSERT INTO GOOGLE_DEV.hrdata.employees VALUES 
    ( 100,  'Ramana',  'Rao',  'RRAO',  '420.271.4567',  TO_DATE('17-JUN-1987', 'dd-MON-yyyy'),  'ADM_PRES',  24000,  NULL,  NULL,  90),
    ( 101,  'Devi',  'Kapoor',  'DKAPOOR',  '420.271.4568',  TO_DATE('21-SEP-1989', 'dd-MON-yyyy'),  'ADM_VP',  17000,  NULL,  100,  90),
    ( 102,  'Nagesh',  'Reddy',  'RNAGESH',  '420.271.4569',  TO_DATE('13-JAN-1993', 'dd-MON-yyyy'),  'ADM_VP',  17000,  NULL,  100,  90),
