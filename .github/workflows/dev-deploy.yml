@@ -18,13 +18,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Use Python 3.8.x
-        uses: actions/setup-python@v2.2.1
+      - name: Setup node
+        uses: actions/setup-node@v4
         with:
-          python-version: 3.8.x
-
+          node-version: 16.13.x
+          cache: npm
+ 
       - name: Run schemachange
         env:
           SF_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
